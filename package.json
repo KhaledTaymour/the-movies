@@ -4,7 +4,7 @@
   "description": "A web app showing movies categorized by genre and providing info about them an giving the opportunity of adding to your wish list",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack serve --mode development",
+    "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +18,9 @@
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router": "^6.6.1",
+    "react-router-dom": "^6.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

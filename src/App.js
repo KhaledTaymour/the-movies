@@ -1,8 +1,14 @@
 import React from "react";
 import "./App.scss";
+import Comp from "./Comp";
 
 const App = () => {
-  return <h1>Hello React</h1>;
+  return (
+    <div>
+      Apppp
+      <Comp />
+    </div>
+  );
 };
 
 export default App;

@@ -37,11 +37,13 @@ module.exports = {
     port: 3000,
     open: true,
     hot: true,
+    historyApiFallback: true, // For routing
   },
   resolve: {
     alias: {
       components: path.resolve(__dirname, "src"),
     },
-    extensions: ["", ".js", ".jsx"],
+    extensions: ["", ".js", ".jsx"], // to import without writing extensions
   },
+  devtool: "source-map", // source map
 };
