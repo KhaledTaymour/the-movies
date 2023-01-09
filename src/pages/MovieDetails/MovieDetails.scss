@@ -1,0 +1,83 @@
+@import "../../styles/variables.scss";
+
+.movie-details__wrapper {
+  margin-inline: 50px;
+
+  .movie-details {
+    &__category {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 20px;
+      padding: 5px;
+      border-left: 1px solid white;
+      border-end-start-radius: 10px;
+    }
+    &__card {
+      display: flex;
+      position: relative;
+      height: 400px;
+    }
+    &__poster {
+      max-height: 400px;
+    }
+    &__info {
+      text-align: start;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__overview {
+      font-size: 20px;
+    }
+    &__button {
+      width: max-content;
+    }
+    &__additional-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-inline: 5px;
+    }
+  }
+
+  &.action {
+    font-family: "DM Serif Display", serif;
+    background: radial-gradient(
+      ellipse at center,
+      $bgMainColor,
+      $bgMainColor,
+      $secondColor
+    );
+  }
+  &.animation {
+    font-family: "Kalam", cursive;
+    background: radial-gradient(
+      ellipse at center,
+      $bgMainColor,
+      $bgMainColor,
+      $thirdColor
+    );
+
+    .movie-details__category {
+      background-color: $thirdColor;
+    }
+  }
+  &.musical {
+    font-family: "Satisfy", cursive;
+    background: radial-gradient(
+      ellipse at center,
+      $fourthColorAlt1,
+      $fourthColorAlt1,
+      $fourthColor
+    );
+
+    .movie-details__category {
+      background-color: $fourthColor;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.wish-list__wrapper {
+  margin: 20px;
+  flex: 1;
+
+  .wish-list {
+    &__movie-list {
+      display: flex;
+      gap: 6px;
+    }
+    &__movie-name {
+      min-width: 400px;
+      text-align: start;
+    }
+  }
+}

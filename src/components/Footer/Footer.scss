@@ -1,0 +1,18 @@
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: auto;
+
+  .footer {
+    &__logo {
+      width: 40px;
+    }
+    &__social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}

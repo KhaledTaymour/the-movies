@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+.movie-card__wrapper {
+  height: 100%;
+  max-height: 400px;
+  border: 1px solid $bgMainColor;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+
+  .movie-card {
+    &__poster-image {
+      height: 100%;
+      max-height: 400px;
+    }
+
+    &__info {
+      visibility: hidden;
+      position: absolute;
+      top: 0px;
+      padding: 10px;
+      height: 100%;
+      width: 100%;
+      background: #00000095;
+      color: $white;
+      font-size: 14px;
+      text-align: start;
+    }
+    &__title {
+      color: $white;
+      font-size: 16px;
+    }
+  }
+
+  &.action {
+    background: radial-gradient(
+      ellipse at center,
+      $bgMainColor,
+      $bgMainColor,
+      $secondColor
+    );
+  }
+  &.animation {
+    background: radial-gradient(
+      ellipse at center,
+      $bgMainColor,
+      $bgMainColor,
+      $thirdColor
+    );
+  }
+  &.musical {
+    background: radial-gradient(
+      ellipse at center,
+      $bgMainColor,
+      $bgMainColor,
+      $fourthColor
+    );
+  }
+
+  &:hover {
+    .movie-card__info {
+      visibility: visible;
+    }
+  }
+}

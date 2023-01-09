@@ -1,0 +1,91 @@
+@import "../../styles/variables.scss";
+
+.movies-carousel {
+  &__wrapper {
+    padding-inline: 50px;
+    background: radial-gradient(black, transparent);
+    height: 496px;
+    width: 90vw;
+
+    .movies-carousel {
+      &__title {
+        text-transform: capitalize;
+        text-align: start;
+        font-size: 40px;
+      }
+      &__title.action-font {
+        font-family: "DM Serif Display", serif;
+      }
+      &__title.animation-font {
+        font-family: "Kalam", cursive;
+      }
+      &__title.musical-font {
+        font-family: "Satisfy", cursive;
+      }
+    }
+
+    .movie-card__wrapper {
+      height: 400px;
+    }
+
+    .slide:not(.slick-active) {
+      cursor: pointer;
+    }
+
+    .slick {
+      &-slider,
+      &-list,
+      &-track {
+        max-height: 440px;
+      }
+      &-active {
+        padding: 20px 0;
+        z-index: 1;
+      }
+
+      &-center {
+        transform: scale(1.08);
+        transition: transform 0.5s;
+      }
+      &-slide {
+        &:not(.slick-current) {
+          pointer-events: none;
+          img {
+            opacity: 0.2;
+            transition: opacity 0.5s;
+          }
+        }
+        &:not(.slick-active) {
+          margin: 20px 0;
+        }
+      }
+      &-current {
+        position: inherit;
+        z-index: 1;
+      }
+
+      &-dots {
+        bottom: 0%;
+        li button:before {
+          position: unset;
+        }
+      }
+      &-prev {
+        z-index: 1;
+        left: 10px;
+        scale: 2;
+        &:before {
+          color: $mainTextColor;
+        }
+      }
+      &-next {
+        z-index: 1;
+        right: 10px;
+        scale: 2;
+        &:before {
+          color: $mainTextColor;
+        }
+      }
+    }
+  }
+}

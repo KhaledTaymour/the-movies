@@ -1,4 +1,30 @@
-h1 {
-  color: red;
-  background-color: black;
+@import "./styles/variables.scss";
+@import "./styles/global.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100%;
+  background-color: $bgMainColor;
+}
+body {
+  position: relative;
+}
+
+#root,
+#app {
+  height: 100%;
+}
+.App {
+  text-align: center;
+  background-color: $bgMainColor;
+  color: $mainTextColor;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
