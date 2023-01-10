@@ -50,4 +50,4 @@ The Wishlist is accessible by clicking on its icon on the header, and the user h
 
 ### How to use it?
 
-You can clone or download the repo. Then to run it you can run the command `npm start` which will run webpack in dev mode, or you can create a build by running `npm run build`
+You can clone or download the repo. Then install the packages by running `npm install` on the root folder, Then to run it you can run the command `npm start` which will run webpack in dev mode, or you can create a build by running `npm run build`
