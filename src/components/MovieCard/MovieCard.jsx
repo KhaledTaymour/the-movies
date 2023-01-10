@@ -5,8 +5,15 @@ import { Link } from "react-router-dom";
 
 function MovieCard({ data }) {
   return (
-    <Link to={`/moviedetails/${data.id}`} state={{ category: data.category }}>
-      <div className={`movie-card__wrapper ${data.category}`}>
+    <Link
+      to={`/moviedetails/${data.id}`}
+      state={{ category: data.category }}
+      data-testid={`movie-card__wrapper-link-${data.category}`}
+    >
+      <div
+        className={`movie-card__wrapper ${data.category}`}
+        data-testid="movie-card__wrapper"
+      >
         <img
           src={servicesURLs.MOVIE_POSTER_URL.replace(
             "{posterPath}",

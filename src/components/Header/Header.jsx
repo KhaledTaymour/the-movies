@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="header__wrapper">
       <Link to={siteRoutes.home}>
-        <h1>The Movies</h1>
+        <h1 data-testid="header-website-name">The Movies</h1>
       </Link>
       <Link to={siteRoutes.wishlist}>
         <img

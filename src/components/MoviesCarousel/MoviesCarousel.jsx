@@ -46,7 +46,10 @@ function MoviesCarousel({ category, data, isLoading, hasError }) {
     prevArrow: <PrevArrow />,
   };
   return (
-    <div className={`movies-carousel__wrapper ${category.toLocaleLowerCase()}`}>
+    <div
+      className={`movies-carousel__wrapper ${category.toLocaleLowerCase()}`}
+      data-testid={`movies-carousel__wrapper-${category.toLocaleLowerCase()}`}
+    >
       <h3
         className={`movies-carousel__title ${category.toLocaleLowerCase()}-font`}
       >
