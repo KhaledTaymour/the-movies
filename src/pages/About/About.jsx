@@ -13,6 +13,12 @@ function About() {
           them an giving the opportunity of adding to your wish list
         </p>
         Made By Khaled Taymour
+        <br />
+        Visit the{" "}
+        <a href="https://github.com/KhaledTaymour/the-movies">
+          github repo
+        </a>{" "}
+        for more
       </article>
       <Footer />
     </>
